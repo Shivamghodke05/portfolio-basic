@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal-Website</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Caveat:wght@400..700&family=DM+Serif+Text:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nav">
+      <ul class="nav-bar">
+        <li>
+          <a href="index.html"><img src="./images/logo1.png" height="60"  class=" logo nav-logo" /></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="https://shivamghodke05.github.io/My-Resume/">Resume</a></li>
+        <li><a href="https://github.com/Shivamghodke05">Projects</a></li>
+        <li><a href="">Contact me</a></li>
+      </ul>
+    </div>
+    <div class="hero-sec col-12">
+      <div class="hero-left">
+        <h1 class="curious">Curious.</h1>
+        <h1 class="building">Building.</h1>
+        <h1 class="becoming">Becoming.</h1>
+      </div>
+      <div class="hero-right">
+        <h2 class="hero-title">Hey, I'm Shivam</h2>
+        <p class="hero-info">
+          <span>Aspiring Full Stack Developer & Creative Builder. </span
+          >Crafting meaningful web experiences with code, design, and curiosity.
+          Currently leveling up in React, Tailwind, and APIs. I don't just code
+          — I create.
+        </p>
+        <button
+          type="button"
+          style="font-family: Roboto, sans-serif"
+          class="btn bg btn-lg"
+        >
+          View My Work 🡲
+        </button>
+      </div>
+    </div>
+
+    <div class="about-me">
+      <div class="about-me-card">
+        <h1><a href="">About Me</a></h1>
+        <p>
+          Hey, I’m Shivam — an Electronics and Telecommunication engineering
+          student who fell in love with building things on the web.
+          <br /><br />
+          I started my coding journey with simple HTML and CSS projects, and
+          slowly got pulled into the world of full-stack development. I’m
+          currently learning React, APIs, and trying to build better, cleaner
+          projects every week.
+          <br /><br />
+          I’m not the smartest in the room, but I’m consistent, curious, and
+          always improving. Whether it’s fixing a bug that kept me up all night
+          or finally understanding how something works — I live for those little
+          wins.
+          <br /><br />
+          Outside of code, I enjoy design, anime, and documenting my growth. I
+          believe in learning publicly, staying authentic, and proving my worth
+          through action — not just words.
+        </p>
+      </div>
+    </div>
+
+    <section class="carousel-section">
+      <div class="carousel-wrapper">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="./images/intro-front-dev.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./images/js-programming.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/cpp.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/firodia.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="skills px-5 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom">Skills</h2>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+      >
+        <div class="col d-flex align-items-start">
+          <svg
+            class="bi text-body-secondary flex-shrink-0 me-3"
+            width="1.75em"
+            height="1.75em"
+            aria-hidden="true"
+          >
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Java Script</h3>
+            <p>Making websites interactive, smooth, and alive.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg
+            class="bi text-body-secondary flex-shrink-0 me-3"
+            width="1.75em"
+            height="1.75em"
+            aria-hidden="true"
+          >
+            <use xlink:href="#cpu-fill"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C++</h3>
+            <p>Writing efficient logic and understanding computer guts.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg
+            class="bi text-body-secondary flex-shrink-0 me-3"
+            width="1.75em"
+            height="1.75em"
+            aria-hidden="true"
+          >
+            <use xlink:href="#calendar3"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+            <p>Structuring the web, one tag at a time.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg
+            class="bi text-body-secondary flex-shrink-0 me-3"
+            width="1.75em"
+            height="1.75em"
+            aria-hidden="true"
+          >
+            <use xlink:href="#home"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">CSS</h3>
+            <p>Styling pixels to look good on every screen.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg
+            class="bi text-body-secondary flex-shrink-0 me-3"
+            width="1.75em"
+            height="1.75em"
+            aria-hidden="true"
+          >
+            <use xlink:href="#speedometer2"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Canva</h3>
+            <p>Quick, clean, and aesthetic designs in minutes.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg
+            class="bi text-body-secondary flex-shrink-0 me-3"
+            width="1.75em"
+            height="1.75em"
+            aria-hidden="true"
+          >
+            <use xlink:href="#toggles2"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Git/GitHub </h3>
+            <p> Keeping code safe, clean, and versioned like a pro.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg
+            class="bi text-body-secondary flex-shrink-0 me-3"
+            width="1.75em"
+            height="1.75em"
+            aria-hidden="true"
+          >
+            <use xlink:href="#geo-fill"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Soft Skills</h3>
+            <p> Communicating clearly, staying chill under pressure, and owning feedback like a champ.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg
+            class="bi text-body-secondary flex-shrink-0 me-3"
+            width="1.75em"
+            height="1.75em"
+            aria-hidden="true"
+          >
+            <use xlink:href="#tools"></use>
+          </svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Teamwork</h3>
+            <p> Collaborating with people to build better, faster, smarter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

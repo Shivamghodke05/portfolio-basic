@@ -1,0 +1,263 @@
+*,body {
+  background-color: #000000;
+}
+
+.nav {
+  background-color: black;
+}
+body {
+  margin: 0;
+}
+.nav-bar {
+  color: #cfffe2;
+  display: flex;
+  
+  list-style: none;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 0;
+  margin-top: 0;
+
+}
+
+.nav-bar li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #cfffe2;
+}
+.logo{
+    margin-left: 0px !important;
+}
+.nav-bar li {
+  margin-left: 100px;
+}
+
+.hero-sec {
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
+  display: grid;
+  gap: 200px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #000000;
+  color: #6fc4a9;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10rem;
+}
+
+.hero-left h1 {
+    font-size: clamp(3rem, 10vw, 12rem);
+}
+.curious{
+    color: #51fb95;
+    text-shadow: 0 0 10px #81fbb8cc;
+}
+.building{
+    color: #83fbb3;
+    text-shadow: 0 0 10px #81fbb8cc;
+}
+.becoming{
+  color: #cfffe2;
+  text-shadow: 0 0 10px #81fbb8cc;
+}
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: clamp(400px, 50vw, 50rem);
+  }
+  
+  .hero-title {
+    font-size: clamp(1rem, 5vw, 4rem);
+    color: #A0FFE2;
+    font-weight: 900;
+    background: linear-gradient(90deg, #c1fcd3, #98f6f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero-info {
+    margin-top: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 200;
+    color: #a7dad5;
+  }
+  
+  .hero-info span {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-weight: 600;
+    color: #95e4da;
+  }
+  
+.btn {
+  margin-top: 20px;
+  width: 400px;
+}
+.bg {
+  --bs-bg-opacity: 1;
+  background-color: #00c6a2 !important ;
+
+  color: black !important;
+}
+.bg:hover {
+  background-color:  #00ffcb !important ;
+}
+.about-me {
+  height: 90vh;
+background-color: #00c6a2;
+  color: #b8e3dc;
+  padding: 6rem;
+  display: flex;
+    align-items: center;
+  background-image: url(./images/background-about-me.png) ;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   
+}
+.about-me-card{
+    width:50%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    font-family: "Newsreader", serif;
+}
+.about-me-card h1{
+    font-size: clamp(4rem, 2vw, 6rem);
+    margin: 30px;
+   margin-bottom: 50px;
+    
+}
+.about-me-card h1 a{
+    text-decoration: none;
+   color: #78ffd6;
+    
+}
+.about-me-card p{
+    font-size: x-large;
+    margin-left: 30px;
+    color: #a7dad5;
+}
+
+.carousel-wrapper {
+    max-width: 1500px;
+    height: 110vh;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+  }
+  .footer-mask {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent for mask feel */
+    backdrop-filter: blur(8px);           /* adds glass blur */
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 0px;
+    padding: 0rem;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.08); /* light neon glow */
+    font-size: xx-large;
+  }
+  
+  .footer-link {
+    color: #a3f7bf !important;
+    font-weight: 400;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .footer-link:hover {
+    color: #72e6cb !important;
+    text-decoration: underline;
+  }
+  
+  .footer-copy {
+    color: #b8e3dc;
+    font-size: 0.95rem;
+  }
+  .skills{
+    padding-left: 100px !important;
+    font-size: 1.3rem;
+  }
+  .pb-2{
+    font-size: 3rem;
+    padding: 0 !important;
+  }
+  
+  
+
+
+@media screen and (max-width: 1292px) {
+    .hero-sec{
+        gap:0;
+    }
+    .hero-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        
+        
+      }
+    .hero-left h1{
+        
+        padding-bottom: 70px;
+        
+      }
+    
+    .hero-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-right{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .hero-info{
+        width: 75%;
+    }
+    .about-me{
+        height: 140vh;
+        width: 100%;
+    }
+    .about-me-card{
+        width: 100%;
+        height: 120vh;
+    }
+    .carousel-wrapper{
+        height: 100%;
+    }
+    .nav-bar li{
+        margin-left: 30px;
+        
+    }
+    .logo {
+        margin-left: 0px !important;
+      }
+      
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
