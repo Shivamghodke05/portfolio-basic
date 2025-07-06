@@ -246,7 +246,7 @@ background-color: #00c6a2;
   }
 
   .about-me-card p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   .carousel-wrapper {
@@ -260,17 +260,20 @@ background-color: #00c6a2;
   }
 }
 @media (max-width: 500px) {
+  .about-me{
+    padding: 0rem;
+  }
   .about-me-card {
     height: 120vh;
     padding: 20px;
   }
 
   .about-me-card h1 a {
-    font-size: 1.5rem;
+    font-size: 4rem;
   }
 
   .about-me-card p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 @keyframes gradientMove {
