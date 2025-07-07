@@ -3,7 +3,10 @@
 body {
   background-color: #000000;
 }
-
+body {
+  margin: 0;
+}
+/* Nav Bar*/
 .nav {
   background-color: black;
   position: sticky;
@@ -11,14 +14,13 @@ body {
   z-index: 999;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
 }
-body {
-  margin: 0;
-}
+
 .nav-bar {
   color: #cfffe2;
   display: flex;
-
+  padding-left: 0px;
   list-style: none;
   font-size: 20px;
   align-items: center;
@@ -30,9 +32,14 @@ body {
 }
 
 .nav-bar li a {
+  margin: 10px;
   cursor: pointer;
   text-decoration: none;
   color: #cfffe2;
+}
+.nav-link.active {
+  border-bottom: 2px solid #00ffcc;
+  font-weight: bold;
 }
 .logo {
   margin-left: 0px !important;
@@ -40,6 +47,32 @@ body {
 .nav-bar li {
   margin-left: 100px;
 }
+.custom-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 255, 200, 0.4);
+  transition: all 0.3s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-btn:hover {
+  background: linear-gradient(135deg, #00bfa6, #0051e0);
+  box-shadow: 0 6px 20px rgba(0, 255, 200, 0.6);
+  transform: translateY(-2px);
+  color: #fff;
+}
+.custom-btn:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 0 8px rgba(0, 255, 195, 0.2);
+  filter: brightness(0.9);
+}
+
+/* Hero Section */
 
 .hero-sec {
   font-family: "Newsreader", serif;
@@ -107,6 +140,31 @@ body {
   margin-top: 20px;
   width: 400px;
 }
+.cta-btn {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #00ffc3, #0077b6);
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 255, 195, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 255, 195, 0.5);
+  color: #fff;
+}
+.cta-btn:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 0 8px rgba(0, 255, 195, 0.2);
+  filter: brightness(0.9);
+}
 .bg {
   --bs-bg-opacity: 1;
   background-color: #00c6a2 !important ;
@@ -116,6 +174,9 @@ body {
 .bg:hover {
   background-color: #00ffcb !important ;
 }
+
+/*About section*/
+
 .about-me {
   height: 90vh;
   background-color: #00c6a2;
@@ -154,6 +215,10 @@ body {
   color: #a7dad5;
 }
 
+
+/*Certifications*/
+
+
 .carousel-wrapper {
   max-width: 1500px;
   height: 110vh;
@@ -164,31 +229,8 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.footer-mask {
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent for mask feel */
-  backdrop-filter: blur(8px); /* adds glass blur */
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 0px;
-  padding: 0rem;
-  box-shadow: 0 0 20px rgba(0, 255, 170, 0.08); /* light neon glow */
-  font-size: xx-large;
-}
 
-.footer-link {
-  color: #a3f7bf !important;
-  font-weight: 400;
-  transition: color 0.2s ease-in-out;
-}
-
-.footer-link:hover {
-  color: #72e6cb !important;
-  text-decoration: underline;
-}
-
-.footer-copy {
-  color: #b8e3dc;
-  font-size: 0.95rem;
-}
+/*all .container costomisation*/
 .skills {
   padding-left: 100px !important;
   font-size: 1.3rem;
@@ -197,6 +239,34 @@ body {
   font-size: 3rem;
   padding: 0 !important;
 }
+
+
+.container {
+  width: 100% !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  padding-top: 50px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-width: 1500px !important; /* You can adjust this */
+}
+#skills .container {
+  width: 100% !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  padding-top: 100px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-width: 1800px !important; /* You can adjust this */
+}
+#about-me .container {
+  width: 100% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-width: 1900px !important; /* You can adjust this */
+}
+
+/*media queries*/
 
 @media screen and (max-width: 1292px) {
   .hero-sec {
@@ -277,6 +347,50 @@ body {
   .about-me-card p {
     font-size: 1rem;
   }
+  .custom-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #00ffc8, #0074ff);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 255, 200, 0.4);
+    transition: all 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .custom-btn:hover {
+    background: linear-gradient(135deg, #00bfa6, #0051e0);
+    box-shadow: 0 6px 20px rgba(0, 255, 200, 0.6);
+    transform: translateY(-2px);
+    color: #fff;
+  }
+  .hide{
+    display: none;
+  }
+}
+
+/*footer paddings*/
+.px-6{
+  padding-left:12rem !important;
+  padding-right:12rem !important;
+}
+
+
+
+
+/* Keyframes  */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 195, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 195, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 195, 0.3);
+  }
 }
 @keyframes gradientMove {
   0% {
@@ -289,5 +403,3 @@ body {
     background-position: 0% 50%;
   }
 }
-
-
