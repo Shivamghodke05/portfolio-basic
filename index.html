@@ -25,7 +25,10 @@
     ></script>
     <link rel="icon" type="image/png" href="./images/logo1.png" />
   </head>
-  <body>
+  <body  data-bs-spy="scroll" data-bs-target=".nav-bar" data-bs-offset="100" tabindex="0">
+
+    <!-- nav bar -->
+
     <div class="nav">
       <ul class="nav-bar">
         <li>
@@ -33,58 +36,201 @@
             ><img src="./images/logo1.png" height="60" class="logo nav-logo"
           /></a>
         </li>
-        <li><a href="#hero-section">Home</a></li>
-        <li><a href="#about-me">About</a></li>
-        <li>
-          <a href="#skills">Skills</a>
+        <li><a  class="nav-link" href="#hero-section">Home</a></li><li class="hide">
+          <a  class="nav-link" href="#skills">Skills</a>
         </li>
-        <li><a href="#certificates">Certifications</a></li>
-        <li><a href="https://github.com/Shivamghodke05">Projects</a></li>
+        <li class="hide"><a  class="nav-link " href="#about-me">About</a></li>
+        
+        <li class="hide"><a class="nav-link certificate" href="#certificates">Certifications</a></li>
+        <li>
+          <a href="https://github.com/Shivamghodke05" target="_blank" class="custom-btn">
+            Projects
+          </a>
+        </li>
       </ul>
     </div>
     <section id="hero-section">
-    <div class="hero-sec col-12">
-      <div class="hero-left">
-        <h1 class="curious">Curious.</h1>
-        <h1 class="building">Building.</h1>
-        <h1 class="becoming">Becoming.</h1>
-      </div>
-      <div class="hero-right">
-        <h2 class="hero-title">Hey, I'm Shivam</h2>
-        <p class="hero-info">
-          <span>Aspiring Full Stack Developer & Creative Builder. </span
-          >Crafting meaningful web experiences with code, design, and curiosity.
-          Currently leveling up in React, Tailwind, and APIs. I don't just code
-          — I create.
-        </p>
-        <a href="https://shivamghodke05.github.io/Contact-Me/"
-          ><button
-            type="button"
-            style="font-family: Roboto, sans-serif"
-            class="btn bg btn-lg"
+      <div class="hero-sec col-12">
+        <div class="hero-left">
+          <h1 class="curious">Curious.</h1>
+          <h1 class="building">Building.</h1>
+          <h1 class="becoming">Becoming.</h1>
+        </div>
+        <div class="hero-right">
+          <h2 class="hero-title">Hey, I'm Shivam</h2>
+          <p class="hero-info">
+            <span>Aspiring Full Stack Developer & Creative Builder. </span
+            >Crafting meaningful web experiences with code, design, and
+            curiosity. Currently leveling up in React, Tailwind, and APIs. I
+            don't just code — I create.
+          </p>
+          <a href="https://shivamghodke05.github.io/Contact-Me/"
+            ><button
+              type="button"
+              style="font-family: Roboto, sans-serif"
+              class=" cta-btn"
+            >
+              Contact Me
+            </button></a
           >
-            Contact Me
-          </button></a>
+        </div>
       </div>
-    </div>
-  </section>
-<section id="about-me">
-    <div class="about-me">
-      <div class="about-me-card">
-        <h1><a href="">About Me</a></h1>
-        <p>
-          Hey, I'm Shivam — an Electronics and Telecommunication engineering student with a strong interest in web development and creative problem-solving. <br><br>
-        
-          I started with basic HTML and CSS projects and gradually moved into building responsive, user-friendly websites through hands-on learning. <br><br>
-        
-          I’m passionate about building meaningful digital experiences and always looking for opportunities to grow — both as a developer and as a person. <br><br>
-        
-          Outside of tech, I’m curious about design, personal development, and exploring ideas that challenge the norm.
-        </p>
-        
+    </section>
+
+    <!--Skills-->
+    <section id="skills">
+
+      <div class="container skills px-5 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Skills</h2>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+        >
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Java Script</h3>
+              <p>Making websites interactive, smooth, and alive.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#cpu-fill"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C++</h3>
+              <p>Writing efficient logic and understanding computer guts.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#calendar3"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                Featured title
+              </h3>
+              <p>Structuring the web, one tag at a time.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#home"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">CSS</h3>
+              <p>Styling pixels to look good on every screen.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#speedometer2"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Canva</h3>
+              <p>Quick, clean, and aesthetic designs in minutes.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#toggles2"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Git/GitHub</h3>
+              <p>Keeping code safe, clean, and versioned like a pro.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#geo-fill"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Soft Skills</h3>
+              <p>
+                Communicating clearly, staying chill under pressure, and owning
+                feedback like a champ.
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg
+              class="bi text-body-secondary flex-shrink-0 me-3"
+              width="1.75em"
+              height="1.75em"
+              aria-hidden="true"
+            >
+              <use xlink:href="#tools"></use>
+            </svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Teamwork</h3>
+              <p>Collaborating with people to build better, faster, smarter.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-</section>
+    </section>
+
+    <!--About Me-->
+
+    <section id="about-me">
+      <div class="container about-me">
+        <div class="about-me-card">
+          <h1><a href="">About Me</a></h1>
+          <p>
+            Hey, I'm Shivam — an Electronics and Telecommunication engineering
+            student with a strong interest in web development and creative
+            problem-solving. <br /><br />
+
+            I started with basic HTML and CSS projects and gradually moved into
+            building responsive, user-friendly websites through hands-on
+            learning. <br /><br />
+
+            I’m passionate about building meaningful digital experiences and
+            always looking for opportunities to grow — both as a developer and
+            as a person. <br /><br />
+
+            Outside of tech, I’m curious about design, personal development, and
+            exploring ideas that challenge the norm.
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="certificates" class="carousel-section">
       <div class="carousel-wrapper">
         <div
@@ -135,129 +281,21 @@
         </div>
       </div>
     </section>
-<section id="skills">
-    <div class="skills px-5 py-5" id="icon-grid">
-      <h2 class="pb-2 border-bottom">Skills</h2>
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
-      >
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-            aria-hidden="true"
-          >
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Java Script</h3>
-            <p>Making websites interactive, smooth, and alive.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-            aria-hidden="true"
-          >
-            <use xlink:href="#cpu-fill"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C++</h3>
-            <p>Writing efficient logic and understanding computer guts.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-            aria-hidden="true"
-          >
-            <use xlink:href="#calendar3"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Structuring the web, one tag at a time.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-            aria-hidden="true"
-          >
-            <use xlink:href="#home"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">CSS</h3>
-            <p>Styling pixels to look good on every screen.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-            aria-hidden="true"
-          >
-            <use xlink:href="#speedometer2"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Canva</h3>
-            <p>Quick, clean, and aesthetic designs in minutes.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-            aria-hidden="true"
-          >
-            <use xlink:href="#toggles2"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Git/GitHub</h3>
-            <p>Keeping code safe, clean, and versioned like a pro.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-            aria-hidden="true"
-          >
-            <use xlink:href="#geo-fill"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Soft Skills</h3>
-            <p>
-              Communicating clearly, staying chill under pressure, and owning
-              feedback like a champ.
-            </p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-            aria-hidden="true"
-          >
-            <use xlink:href="#tools"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Teamwork</h3>
-            <p>Collaborating with people to build better, faster, smarter.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
+   
+
+    <!--Porjects-->
+    <section id="projects">
+      
+
+    </section>
+    <footer class="py-5 px-6"> <p class="float-end"><a href="#">Back to top</a></p> <p class="padding">
+      Connect with me:
+      <a href="https://www.linkedin.com/in/Shivamghodke05" target="_blank">LinkedIn</a> |
+      <a href="mailto:shivamghodke05@gmail.com">Email</a> |
+      <a href="https://github.com/Shivamghodke05" target="_blank">GitHub</a> |
+      <a href="https://shivamghodke05.github.io/My-Resume/My-certificates.html" target="_blank">My Certifications</a>
+    </p>
+    <p class="padding">&copy; 2025 Shivam Ghodke. All rights reserved.</p> </footer>
   </body>
 </html>
